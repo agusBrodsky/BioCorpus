@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia - Centro de Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            background-image: url('./img/piedras.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Logo Centro de Estética" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Bienvenido a nuestro centro de estetica</h1>
+            <h2>Nuestro centro de estética ofrece una amplia gama de servicios para ayudarte a lucir y sentirte mejor.
+                Con profesionales altamente capacitados y las últimas tecnologías en tratamientos estéticos, estamos
+                comprometidos a brindarte la mejor experiencia.</h2>
+            <div class="cta-buttons">
+                <a href="#tratamientos" class="btn">TRATAMIENTOS</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="carousel-section">
+        <div class="carousel">
+            <div><img src="img/carrousel1.jpg" alt="Spa treatment 1"></div>
+            <div><img src="img/carrousel2.jpg" alt="Spa treatment 2"></div>
+            <div><img src="img/carrousel3.jpg" alt="Spa treatment 3"></div>
+        </div>
+    </section>
+
+    <section class="treatments" id="tratamientos">
+        <h2>Nuestros Tratamientos</h2>
+        <p class="subtitle">Te brindamos los mejores tratamientos para que tu momento, sea único</p>
+
+        <div class="treatments-grid">
+            <div class="treatment-card">
+                <img src="img/drenaje-linfatico.jpg" alt="Drenaje linfático">
+                <h3>Masaje Descontracturante y relajante</h3>
+                <p>Alivia tensiones y relaja tus músculos con nuestro masaje descontracturante y relajante. Perfecto
+                    para combatir el estrés y la fatiga.
+                </p>
+            </div>
+            <div class="treatment-card">
+                <img src="img/depilacion.jpg" alt="Depilacion">
+                <h3>Depilacion</h3>
+                <p>Disfruta de una piel suave y libre de vello con nuestros servicios de depilación. Ofrecemos varias
+                    técnicas para tu comodidad.
+                </p>
+            </div>
+            <div class="treatment-card">
+                <img src="img/tratamiento-facial.jpg" alt="Tratamiento facial">
+                <h3>Tratamiento facial</h3>
+                <p>Revitaliza y rejuvenece tu piel con nuestros tratamientos faciales personalizados. Ideales para
+                    mantener una piel saludable y radiante.
+                </p>
+            </div>
+            <div class="treatment-card">
+                <img src="img/manicura-pedicura.jpg" alt="Manicura y Pedicura">
+                <h3>Manicura y Pedicura</h3>
+                <p>Cuida tus manos y pies con nuestros servicios de manicura y pedicura. Relájate mientras nuestros
+                    expertos miman tus uñas y cutículas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="schedule">
+            <img src="img/horario.png" alt="Horario" class="icon">
+            <h3>Horarios de Atención</h3>
+            <p>De Lúnes a Sábados de 10:00 a 21:00hs.</p>
+            <p>Domingos de 12:00 a 16:00hs.</p>
+            <p class="note">Recordá que sólo atendemos con reserva previa de turno.</p>
+            <a href="contacto.html" class="btn">Reservar Turno</a>
+        </div>
+
+        <div class="location">
+            <img src="img/ubicacion.png" alt="Ubicación" class="icon">
+            <h3>Ubicación</h3>
+            <p>Av. Santa Fe 3233, Piso 1 Depto 15, Palermo, CABA</p>
+            <p>Pedí Turno por WhatsApp.</p>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5!2d-58.4!3d-34.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDMwJzAwLjAiUyA1OMKwMjQnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890!5m2!1ses!2sar"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Centro de Estética. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
